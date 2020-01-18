@@ -38,6 +38,8 @@ C++ library and tools for a serialization/RPC system
 %package -n %{devname}
 Summary: Development files for C++ library and tools for a serialization/RPC system
 Group: Development/C++ and C
+Requires: %{libname} = %{EVRD}
+Requires: %{name} = %{EVRD}
 
 %description -n %{devname}
 Development files for C++ library and tools for a serialization/RPC system
