@@ -1,8 +1,8 @@
-%define libname %mklibname capnp 0.7.0
+%define libname %mklibname capnp
 %define devname %mklibname -d capnp
 
 Name: capnproto
-Version: 0.7.0
+Version: 0.10.2
 Release: 1
 Summary: C++ library and tools for a serialization/RPC system
 Group: System/Libraries
@@ -25,15 +25,17 @@ Group: System/Libraries
 C++ library and tools for a serialization/RPC system
 
 %files -n %{libname}
-%{_libdir}/libcapnp.so.*
-%{_libdir}/libcapnpc.so.*
-%{_libdir}/libcapnp-rpc.so.*
-%{_libdir}/libcapnp-json.so.*
-%{_libdir}/libkj.so.*
-%{_libdir}/libkj-async.so.*
-%{_libdir}/libkj-gzip.so.*
-%{_libdir}/libkj-http.so.*
-%{_libdir}/libkj-test.so.*
+%{_libdir}/libcapnp.so*
+%{_libdir}/libcapnpc.so*
+%{_libdir}/libcapnp-rpc.so*
+%{_libdir}/libcapnp-json.so*
+%{_libdir}/libcapnp-websocket.so*
+%{_libdir}/libkj.so*
+%{_libdir}/libkj-async.so*
+%{_libdir}/libkj-gzip.so*
+%{_libdir}/libkj-http.so*
+%{_libdir}/libkj-test.so*
+%{_libdir}/libkj-tls.so*
 
 %package -n %{devname}
 Summary: Development files for C++ library and tools for a serialization/RPC system
@@ -47,7 +49,6 @@ Development files for C++ library and tools for a serialization/RPC system
 %files -n %{devname}
 %{_includedir}/capnp
 %{_includedir}/kj
-%{_libdir}/*.so
 %{_libdir}/cmake/CapnProto
 %{_libdir}/pkgconfig/*.pc
 
