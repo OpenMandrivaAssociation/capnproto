@@ -2,7 +2,7 @@
 %define devname %mklibname -d capnp
 
 Name: capnproto
-Version: 0.10.2
+Version: 0.10.3
 Release: 1
 Summary: C++ library and tools for a serialization/RPC system
 Group: System/Libraries
