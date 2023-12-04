@@ -13,6 +13,7 @@ BuildRequires: cmake
 BuildRequires: ninja
 BuildRequires: cmake(ECM)
 BuildRequires: pkgconfig(zlib)
+BuildRequires: pkgconfig(openssl)
 
 %description
 C++ library and tools for a serialization/RPC system
