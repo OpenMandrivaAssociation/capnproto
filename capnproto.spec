@@ -7,7 +7,7 @@ Release: 1
 Summary: C++ library and tools for a serialization/RPC system
 Group: System/Libraries
 License: MIT
-Url: http://capnproto.org/
+Url: https://capnproto.org/
 Source0: https://github.com/capnproto/capnproto/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires: cmake
 BuildRequires: ninja
